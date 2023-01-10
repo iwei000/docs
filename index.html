@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <title>文档</title>
+  <link rel="stylesheet" href="lib/theme.css">
+  <link rel="stylesheet" href="lib/custom.css">
+</head>
+
+<body>
+  <nav>
+    <a href="https://www.informat.cn/" target="_blank">织信官网</a>
+    <a href="https://next.informat.cn/doc/index.html#/" target="_blank">开发文档</a>
+  </nav>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      loadSidebar: true,
+      loadSidebar: 'sidebar.md',
+      subMaxLevel: 3,
+      themeColor: '#3064f5',
+      name: '织信 Informat',
+      logo: 'lib/logo.png',
+      search: {
+        maxAge: 86400000,               // 过期时间，单位毫秒，默认一天
+        paths: [],                      // or 'auto'，匹配文件路径
+        placeholder: '搜索文档',  // 搜索提示框文字， 支持本地化，例子在下面
+        noData: '找不到匹配的结果',       // 找不到结果文字提示，支持本地化，例子在下面
+        depth: 6,                       // 搜索标题的最大程级, 1 - 6
+      }
+    }
+  </script>
+  <script src="lib/docsify.min.js"></script>
+  <script src="lib/search.min.js"></script>
+  <script src="lib/zoom-image.min.js"></script>
+  <script src="lib/docsify-copy-code.min.js"></script>
+</body>
+
+</html>

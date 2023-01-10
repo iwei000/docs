@@ -1,0 +1,24 @@
+table{
+    width:100%;
+}
+:root{
+    --table-cell-padding: 0.3em 0.2em;
+}
+td{
+    min-width: 120px;
+}
+img{
+    width: auto;
+}
+.content {
+    overflow: auto;
+}
+.markdown-section {
+  max-width: 80%;
+}
+.app-nav a+a {
+  margin-left: 20px;
+}
+.sidebar>h1 img {
+  max-width: 80%;
+}
