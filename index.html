@@ -20,7 +20,7 @@
     window.$docsify = {
       loadSidebar: true,
       loadSidebar: 'sidebar.md',
-      subMaxLevel: 3,
+      subMaxLevel: 2,
       themeColor: '#3064f5',
       name: '织信 Informat',
       logo: 'lib/logo.png',
@@ -30,6 +30,10 @@
         placeholder: '搜索文档',  // 搜索提示框文字， 支持本地化，例子在下面
         noData: '找不到匹配的结果',       // 找不到结果文字提示，支持本地化，例子在下面
         depth: 6,                       // 搜索标题的最大程级, 1 - 6
+      },
+      'page-toc': {
+        tocMaxLevel: 4,
+        target: 'h1, h2, h3, h4'
       }
     }
   </script>
@@ -37,6 +41,8 @@
   <script src="lib/search.min.js"></script>
   <script src="lib/zoom-image.min.js"></script>
   <script src="lib/docsify-copy-code.min.js"></script>
+  <script src="lib/docsify-pagination.min.js"></script>
+  <script src="lib/docsify-page-toc.js"></script>
 </body>
 
 </html>

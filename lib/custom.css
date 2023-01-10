@@ -14,11 +14,11 @@ img{
     overflow: auto;
 }
 .markdown-section {
-  max-width: 80%;
+  max-width: 80em;
 }
 .app-nav a+a {
   margin-left: 20px;
 }
 .sidebar>h1 img {
-  max-width: 80%;
+  max-width: 60%;
 }
