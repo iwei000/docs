@@ -22,3 +22,21 @@ img{
 .sidebar>h1 img {
   max-width: 60%;
 }
+.sidebar {
+  background: #f9f9f9;
+}
+.sidebar-nav ul li{
+  position: relative;
+}
+.app-sub-sidebar li::before {
+  content: '-';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+}
+.app-sub-sidebar li.active::before{
+  color: var(--sidebar-nav-link-border-color--active, var(--sidebar-nav-link-border-color))
+}
+.sidebar-nav li.active>a[href^="#/"]:not([href*="?id="]):not(:only-child) strong{
+  color: var(--sidebar-nav-link-border-color--active, var(--sidebar-nav-link-border-color))
+}
